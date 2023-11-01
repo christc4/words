@@ -1,0 +1,34 @@
+\documentclass[5pt,a5paper,twoside]{article} % 10pt font size, A4 paper and two-sided margins
+
+\usepackage[top=1.3cm,bottom=1.3cm,left=1.3cm,right=1.3cm,columnsep=20pt]{geometry} % Document margins and spacings
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{fontspec} % Output font encoding for international characters
+
+\usepackage{microtype} % Improves spacing
+\usepackage{xeCJK}
+\usepackage{xpinyin}
+\usepackage{qrcode}
+\usepackage{tipa}
+\usepackage{multicol} % Required for splitting text into multiple columns
+
+\usepackage[bf,sf,center]{titlesec} % Required for modifying section titles - bold, sans-serif, centered
+
+\usepackage{fancyhdr} % Required for modifying headers and footers
+\usepackage{lettrine}
+
+%\setmainfont{Arial}
+\setCJKmainfont{Noto Sans CJK HK}
+
+\fancyhead[L]{\textsf{\rightmark}} % Top left header
+\fancyhead[R]{\textsf{\leftmark}} % Top right header
+\renewcommand{\headrulewidth}{1.4pt} % Rule under the header
+\fancyfoot[C]{\textbf{\textsf{\thepage}}} % Bottom center footer
+\renewcommand{\footrulewidth}{1.4pt} % Rule under the footer
+\pagestyle{fancy} % Use the custom headers and footers throughout the document
+
+\newcommand{\jk}[1]{\textbf{#1}}
+\newcommand{\entry}[2]{\textbf{#1} - #2}
+\newcommand{\centry}[2]{#1 - #2}
+%\newcommand{\entry}[4]{\markboth{#1}{#1}\textbf{#1}\ {(#2)}\ \textit{#3}\ $\bullet$\ {#4}}  % Defines the command to print each word on the page, \markboth{}{} prints the first word on the page in the top left header and the last word in the top right

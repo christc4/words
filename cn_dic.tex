@@ -1,0 +1,75 @@
+\documentclass[14pt,a4paper,twoside]{article} % 10pt font size, A4 paper and two-sided margins
+
+\usepackage[top=3.5cm,bottom=3.5cm,left=3.7cm,right=4.7cm,columnsep=30pt]{geometry} % Document margins and spacings
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{fontspec} % Output font encoding for international characters
+
+\usepackage{microtype} % Improves spacing
+\usepackage{xeCJK}
+\usepackage{xpinyin}
+
+\usepackage{tipa}
+\usepackage{multicol} % Required for splitting text into multiple columns
+
+\usepackage[bf,sf,center]{titlesec} % Required for modifying section titles - bold, sans-serif, centered
+
+\usepackage{fancyhdr} % Required for modifying headers and footers
+\usepackage{lettrine}
+
+\setmainfont{Arial}
+\setCJKmainfont{Noto Sans CJK HK}
+
+\fancyhead[L]{\textsf{\rightmark}} % Top left header
+\fancyhead[R]{\textsf{\leftmark}} % Top right header
+\renewcommand{\headrulewidth}{1.4pt} % Rule under the header
+\fancyfoot[C]{\textbf{\textsf{\thepage}}} % Bottom center footer
+\renewcommand{\footrulewidth}{1.4pt} % Rule under the footer
+\pagestyle{fancy} % Use the custom headers and footers throughout the document
+
+\newcommand{\entry}[2]{\textbf{#1} - #2}
+\newcommand{\centry}[2]{#1 - #2}
+%\newcommand{\entry}[4]{\markboth{#1}{#1}\textbf{#1}\ {(#2)}\ \textit{#3}\ $\bullet$\ {#4}}  % Defines the command to print each word on the page, \markboth{}{} prints the first word on the page in the top left header and the last word in the top right
+
+\begin{document}
+    \section*{Wor.}
+
+\begin{multicols}{2}
+
+    无论发生了什么事，他总是那么乐观
+    他怎么追求你呢？ - How did he pursue you?
+
+    \centry{\xpinyin*{你家人会接受吗}}{Will your family accept this?}
+
+    \centry{\xpinyin*{那等一会儿我叫她打电话给你。}}{Wait a minute, I'll have her call you}
+
+    \centry{\xpinyin*{因为有朋友介绍过来绍}}{Because a friend recommended it to me}
+    \centry{\xpinyin*{我喜欢跟朋友一起吃饭。}}{I like to eat with friends}
+
+    \centry{\xpinyin*{我吃完饭就回去}}{After dinner I'll go}
+
+    \centry{\xpinyin*{你究竟怎么办到的}}{How on earth did you do that?}
+
+    \centry{\xpinyin*{众口难调，做你自己就好}}{Difficult to please everyone be yourself}
+
+    \centry{\xpinyin*{我算不算你朋友？}}{Do I count as your friend?}
+
+    \centry{\xpinyin*{我们下次再聊吧}}{We'll talk next time}
+
+
+    \centry{\xpinyin*{我忘记了带我的手机}}{I forgot my phone}
+
+
+    \centry{\xpinyin*{你明天打算做什么}}{What are your plans for tomorrow?}
+
+    \centry{\xpinyin*{我很快就会回来}}{I will be back soon}
+
+    \centry{\xpinyin*{我肯定认识他们，但是阿门应该不认识我}}{ahrd-vahrk}{Noun}{His actions were irremediable}
+
+%他刚刚给了服务员一点小费。 -  He just tippeed the waiter a little bit
+%我懂说一点普通话。 - I know a little bit
+%猜一下这件物品是什么。 -  Guess what this item is
+%先生，请问你想喝什么茶呢?
+\end{multicols}
+\end{document}
